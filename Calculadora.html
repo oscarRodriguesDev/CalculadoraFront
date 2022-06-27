@@ -12,27 +12,82 @@ position:absolute;
 }
 div#calculadora{
 background-color: blue;
-width:140px;
+width:44%;
 margin:auto;
-padding:5px;
+
+padding-top:10%;
+padding-left:1%;
+padding-right:1%;
+padding-bottom:4%;
+border-radius:10%;
+border:solid;
+-moz-border-radius: 10%;
+-webkit-border-radius: 10%;
 
 }
+ table{
+ 
+ border-collapse: separate;
+    border-spacing: 5;
 
+ }
 p{
-font-size:25px;
+font-size:130%;
+font-weight:bold;
 }
 td{
+width:20%
+display: flex;
+font-weight:bold;
+height:25%;border-radius:25%;
+box-shadow: 2% 2% 2% 1% rgba(102, 33, 0, 0.5);
+text-align:left;
 
+}
+input:hover{
+background-color:green;
+}
+input:active{
+background-color:yellow;
+color: black;
+font-weight:bold;
 }
 
 input{
+#all inputs
+border:1px;
+background-color:rgb(128,128,255);
+color:white;
 width:30px;
+border-radius:15%;
+
+}
+div #marca{
+color:white;
+position:relative;
+text-align:center
+
+
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }
 
-input.in{
+
+input.in{       
+background-color:white;
 width:130px;
 margin:auto;
-border-color:red;
+color:black;
+text-align:center;
+
+box-shadow: 2% 2% 2% 1% rgba(102, 33, 0, 0.5);
 
 }
 
@@ -40,8 +95,11 @@ border-color:red;
 </style>
 <p>Calculadora para operações basicas</p>
 <div id = 'calculadora'>
-<input class = 'in' type ='text'>
-<table>
+<div id='marca'>
+Calculator
+</div>
+<input class = 'in' type ='number'>
+<table width='100px',height ='100px'>
 <tr><td><input type= 'button' value='1'></td><td><input type= 'button' value='2'></td>
 <td><input type= 'button' value='3'></td><td><input type= 'button' value='-'></td></tr>
 <tr><td><input type= 'button' value='4'></td><td><input type= 'button' value='5'></td>
